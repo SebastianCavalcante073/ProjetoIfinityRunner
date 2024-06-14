@@ -6,6 +6,7 @@ public class MenuController : MonoBehaviour
 {
     [SerializeField] GameObject LoadingPanel;
     [SerializeField] GameObject SettingsPanel;
+    [SerializeField] GameObject SelectPlayerPanel;
    
     // Start is called before the first frame update
     void Start()
@@ -39,5 +40,10 @@ public class MenuController : MonoBehaviour
     public void OpenOrClosePanelSettings()
     {
         SettingsPanel.SetActive(!SettingsPanel.activeSelf);
+    }
+
+    public void OpenOrClosePanelPlayer()
+    {
+        SelectPlayerPanel.SetActive(!SelectPlayerPanel.activeSelf);
     }
 }
